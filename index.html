@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шейкеры</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="popup modal-form hide">
+            <div class="popup__position">
+                <div class="popup__content">
+                    <div class="popup__close">
+                        <div class="popup__block">
+                            <div class="popup__line line1"></div>
+                            <div class="popup__line line2"></div>
+                        </div>
+                    </div>
+                    <p class="popup__title">Заполните ваши контактные данные<br/> и мы свяжемся с Вами в течении 15 минут</p>
+                    <form>
+                        <div class="popup__item">
+                            <img src="img/icons/icon12.png" alt="иконка"/>
+                            <div class="popup__devider"></div>
+                            <input type="text" name="name" id="name" placeholder="Введите Ваше имя" required>
+                        </div>
+                        <div class="popup__item">
+                            <img src="img/icons/icon13.png" alt="иконка"/>
+                            <div class="popup__devider"></div>
+                            <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required>
+                        </div>
+                        <div class="popup__submit btn">
+                            <input type="submit" value="Заказать именной шейкер">
+                        </div>
+                        <div class="popup__check">
+                            <input type="checkbox" class="checkbox" checked="true">
+                            <label for="check">Даю согласие на обработку моих данных</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="wrap">
+                <div class="header__top">
+                    <img src="img/logo.png" class="main-logo" alt="лого" />
+                    <nav>
+                        <a href="">Список товаров</a>
+                        <a href="">Преимущества</a>
+                        <a href="">Отзывы</a>
+                        <a href="">Контакты</a>
+                    </nav>
+                    <div class="header__social">
+                        <a href="">
+                            <img src="img/icons/vk.png" alt="вк" />
+                        </a>
+                        <a href="">
+                            <img src="img/icons/insta.png" alt="инстаграм" />
+                        </a>
+                        <div class="header__phone">
+                            <a href="tel:+798737822211">+79 873 782 22 11</a>
+                            <p>Ежедневно с 8:00 до 23:00</p>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <p id="item-counter">0</p>
+                        <img src="img/icons/cart.png" alt="иконка" />
+                    </div>
+                </div>
+                <div class="header__content">
+                    <div class="header__block">
+                        <h1>Именные товары из пищевой <br class="media-br" />нержавеющией стали с лазерной <br
+                                class="media-br" />гравировкой</h1>
+                        <img src="img/main-mobile-img.png" class="header__mobile-img"alt="шейкеры"/>
+                        <ul>
+                            <li>
+                                <img src="img/icons/icon1.png" alt="иконка" />
+                                Нашими товарами пользуются блогеры и чемпионы
+                            </li>
+                            <li>
+                                <img src="img/icons/icon2.png" alt="иконка" />
+                                Мы создаем только уникальный дизайн специально для Вас
+                            </li>
+                            <li>
+                                <img src="img/icons/icon3.png" alt="иконка" />
+                                Доставка по всему Миру
+                            </li>
+                        </ul>
+                        <a href="" class="btn header__btn mobile-btn modal-btn">
+                            <p>Заказать именной шейкер</p>
+                            <p>От <span>999 Р</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="img/header-sheiker1.png" class="header__decoration1" alt="шейкер"/>
+            <img src="img/img2.png" class="header__decoration2" alt="шейкер"/>
+            <img src="img/img1.png" class="header__decoration3" alt="шейкер"/>
+        </header>
+        <main>
+            <section class="catalog">
+                <div class="wrap">
+                    <h2>Каталог наших товаров</h2>
+                    <div class="catalog__categories">
+                        <a href="" class="catalog__categorie">Именные шейкеры</a>
+                        <a href="" class="catalog__categorie">Именные термокружки</a>
+                        <a href="" class="catalog__categorie">Именные термосы</a>
+                        <a href="" class="catalog__categorie">Бутылки для воды</a>
+                    </div>
+                    <div class="catalog__item cat-1">
+                        <div class="catalog__img">
+                            <img src="img/cart/item16.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Шейкер металический</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">750 мл</div>
+                                <div class="catalog__element">210 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Чёрный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Оранжевый</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>999 Р</p>
+                                        <span>1 340 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item1.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термос с термометром на крышке</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-4">
+                        <div class="catalog__img">
+                            <img src="img/cart/item2.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Бутылка с покрытием soft-touch</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">180 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Фиолетовый</div>
+                                        <div class="catalog__color">Голубой</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                        <div class="catalog__color">Серый</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 199 Р</p>
+                                        <span>1 650 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-1">
+                        <div class="catalog__img">
+                            <img src="img/cart/item3.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термошейкер</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-2">
+                        <div class="catalog__img">
+                            <img src="img/cart/item4.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термостакан</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-1">
+                        <div class="catalog__img">
+                            <img src="img/cart/item5.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Шейкер с прозрачным мерным окном</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item6.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термос</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item7.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Шейкер</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item8.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термокружка</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item9.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Литровый термос</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item10.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термобутылка</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item11.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термокружка</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item12.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Бутылка для воды</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item13.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Бутылка для воды</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item14.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Бутылка для воды</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item cat-3">
+                        <div class="catalog__img">
+                            <img src="img/cart/item15.png" alt="товар" />
+                        </div>
+                        <div class="catalog__content">
+                            <h2 class="catalog__title">Термошейкер</h2>
+                            <div class="catalog__presence">
+                                <img src="img/icons/ok.png" alt="наличие" />
+                                <p>В наличии</p>
+                            </div>
+                            <div class="catalog__description">
+                                <div class="catalog__element"><span>Пищевая нержавеющая сталь</span></div>
+                                <div class="catalog__element">500 мл</div>
+                                <div class="catalog__element">300 гр</div>
+                            </div>
+                            <div class="catalog__options">
+                                <div class="catalog__block">
+                                    <p class="catalog__color-title">Выберите цвет:</p>
+                                    <div class="catalog__colors">
+                                        <div class="catalog__color">Красный</div>
+                                        <div class="catalog__color">Синий </div>
+                                        <div class="catalog__color">Белый</div>
+                                        <div class="catalog__color">Чёрный</div>
+                                    </div>
+                                    <div class="catalog__price">
+                                        <p>1 599 Р</p>
+                                        <span>2 150 Р</span>
+                                    </div>
+                                </div>
+                                <div class="catalog__action">
+                                    <a href="" class="catalog__btn">Сделать заказ</a>
+                                    <a href="" class="catalog__btn catalog__btn--empty">Добавить в карзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="wrap">
+                    <div class="advantages__block">
+                        <div class="advantages__item">
+                            <img src="img/icons/icon9.png" alt="иконка">
+                            <h3>Персональная надпись</h3>
+                            <p>Имя, фамилия, девиз — все, что пожелаете.<br />
+                                Наносим любым шрифтом и на всех языках.<br />
+                                Размер гравировки 160 х 40 мм.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="img/icons/icon7.png" alt="иконка" />
+                            <h3>Без вредных веществ</h3>
+                            <p>Товары изготавливаются из экологически<br />
+                                чистого сплава без примесей<br />
+                                нефтепродуктов и химикатов.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="img/icons/icon8.png" alt="иконка" />
+                            <h3>Без запаха</h3>
+                            <p>Не пахнут. Также в ваших смесях не будет<br />
+                                лишних привкусов даже после длительного<br />
+                                хранения.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="img/icons/icon5.png" alt="иконка" />
+                            <h3>Легко мыть</h3>
+                            <p>Достаточно просто сполоснуть водой.<br />
+                                Смеси не прилипают ко внутренним<br />
+                                стенкам.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="img/icons/icon10.png" alt="иконка" />
+                            <h3>Трудно сломать</h3>
+                            <p>Прочный, но легкий металлический сплав.<br />
+                                Устойчив к падениям и выдерживает<br />
+                                вес взрослого человека.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="img/icons/icon11.png" alt="иконка" />
+                            <h3>Нам доверяют блогеры</h3>
+                            <p>Нашими шейкерами пользуются блогеры<br />
+                                и фитнес-звезды. Они доверились нам,<br />
+                                доверитесь и вы.</p>
+                        </div>
+                    </div>
+                    <img src="img/img4.jpg" class="advantages__img" alt="гантеля" />
+                    <img src="img/sheiker.png" class="advantages__good" alt="шейкер" />
+                </div>
+            </section>
+            <section class="full-catalog">
+                <div class="wrap">
+                    <img src="img/catalog-img.png" class="full-catalog__goods" alt="шейкеры" />
+                    <div class="full-catalog__block">
+                        <h2>Посмотрите полный список наших товаров</h2>
+                        <p>У нас есть огромное множество товаров с различными цветами. Жми на кнопку и переходи в
+                            каталог</p>
+                        <a href="" class="btn modal-btn">Оставить заявку</a>
+                    </div>
+                </div>
+                <img src="img/img3.png" class="full-catalog__img" alt="шейкер" />
+            </section>
+            <section class="faq">
+                <div class="wrap">
+                    <h2>Как получить товар из нашего магазина?</h2>
+                    <div class="faq__block">
+                        <div class="faq__item">
+                            <h3>01</h3>
+                            <p>Вы оставляете заявку</p>
+                        </div>
+                        <div class="faq__item">
+                            <h3>02</h3>
+                            <p>Разработка макета</p>
+                        </div>
+                        <div class="faq__item">
+                            <h3>03</h3>
+                            <p>Оформляем заказ</p>
+                        </div>
+                        <div class="faq__item">
+                            <h3>04</h3>
+                            <p>Изготовление и отчет</p>
+                        </div>
+                        <div class="faq__item">
+                            <h3>05</h3>
+                            <p>Доставка товара</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="txt-reviews">
+                <div class="wrap">
+                    <h2>Посмотрите отзывы наших клиентов</h2>
+                    <div class="txt-reviews__name2">
+                        <img src="img/img6.png" class="bill-img" alt="амиран"/>
+                        <div class="txt-reviews__link">
+                            <img src="img/icons/insta.png" alt="инстаграм">
+                            <a href="">Наш клиент bil_edward </a>
+                        </div>
+                    </div>
+                    <div class="txt-reviews__slider">
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r1.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r2.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r3.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r4.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r5.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r6.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r7.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r8.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r9.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r10.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r11.png" alt="отзыв">
+                        </div>
+                        <div class="txt-reviews__slide">
+                            <img src="img/reviews/r12.png" alt="отзыв">
+                        </div>
+                    </div>
+                    <div class="txt-reviews__name1">
+                        <img src="img/img5.png" class="amiran-img" alt="амиран"/>
+                        <div class="txt-reviews__link">
+                            <img src="img/icons/insta.png" alt="инстаграм">
+                            <a href="">Наш клиент amiran495</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video-reviews">
+                <div class="wrap video-reviews__slider">
+                    <div class="video-reviews__slide">
+                        <div class="video-reviews__img">
+                            <img src="img/feedback/2.jpg" class="review" alt="отзыв" />
+                            <div class="video-reviews__icon">
+                                <img src="img/icons/play.svg" alt="кнопка" />
+                            </div>
+                        </div>
+                        <p>Ирина Ирис<br/>  о шейкере Aesthetic Warrior</p>
+                    </div>
+                    <div class="video-reviews__slide">
+                        <div class="video-reviews__img">
+                            <img src="img/feedback/3.jpg" class="review" alt="отзыв" />
+                            <div class="video-reviews__icon">
+                                <img src="img/icons/play.svg" alt="кнопка" />
+                            </div>
+                        </div>
+                        <p>@victorblud<br/>  о шейкере Aesthetic Warrior</p>
+                    </div>
+                    <div class="video-reviews__slide">
+                        <div class="video-reviews__img">
+                            <img src="img/feedback/4.jpg" class="review" alt="отзыв" />
+                            <div class="video-reviews__icon">
+                                <img src="img/icons/play.svg" alt="кнопка" />
+                            </div>
+                        </div>
+                        <p>@kratkoartur<br/>  о шейкере Aesthetic Warrior</p>
+                    </div>
+                    <div class="video-reviews__slide">
+                        <div class="video-reviews__img">
+                            <img src="img/feedback/5.jpg" class="review" alt="отзыв" />
+                            <div class="video-reviews__icon">
+                                <img src="img/icons/play.svg" alt="кнопка" />
+                            </div>
+                        </div>
+                        <p>Клип @100_sv<br/> с шейкером Aesthetic Warrior</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrap">
+                <div class="logo">
+                    <img src="img/logo.png" alt="лого" />
+                    <a href="" class="footer__political">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__location">
+                    <img src="img/icons/location.png" alt="">
+                    <p>г. Санкт-Петербург, м. Площадь Мужества,<br class="display-br"/>
+                        ул. Политехническая 17, корп. 2</p>
+                </div>
+                <a href="" class="footer__link">Разработка и дизайн:<br />Artur Fernandes</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
